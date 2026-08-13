@@ -8,21 +8,23 @@
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
   <meta name="apple-mobile-web-app-title" content="Content Calendar">
   <title>Content Calendar</title>
-  <link rel="apple-touch-icon" sizes="180x180" href="icon.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="icon.png?v=3">
+  <link rel="apple-touch-icon-precomposed" sizes="180x180" href="icon.png?v=3">
   <link rel="icon" type="image/png" href="icon.png">
   <link rel="manifest" href="manifest.webmanifest">
   <style>
-    *{box-sizing:border-box}body{margin:0;min-height:100dvh;display:grid;place-items:center;padding:28px;background:#f7f7f7;color:#171717;font-family:system-ui,-apple-system,sans-serif}.wrap{width:min(390px,100%);text-align:center}.icon{display:block;width:92px;height:92px;margin:0 auto 24px;border-radius:21px;box-shadow:0 10px 28px rgba(23,23,23,.14)}h1{margin:0;font-size:28px;letter-spacing:-.035em}p{margin:10px auto 22px;max-width:31ch;color:#626262;font-size:15px;line-height:1.5}.steps{margin:0 0 22px;padding:16px 18px;text-align:left;background:#fff;border:1px solid #dedede;border-radius:13px;font-size:14px;line-height:1.7}.open{display:flex;align-items:center;justify-content:center;width:100%;height:48px;border-radius:10px;background:#171717;color:#fff;text-decoration:none;font-size:15px;font-weight:600}.note{margin-top:14px;font-size:12px;color:#777}
+    *{box-sizing:border-box}body{margin:0;min-height:100dvh;display:grid;place-items:center;padding:28px;background:#f7f7f7;color:#171717;font-family:system-ui,-apple-system,sans-serif}.wrap{width:min(390px,100%);text-align:center}.icon{display:block;width:92px;height:92px;margin:0 auto 24px;border-radius:21px;box-shadow:0 10px 28px rgba(23,23,23,.14)}h1{margin:0;font-size:28px;letter-spacing:-.035em}p{margin:10px auto 18px;max-width:31ch;color:#626262;font-size:15px;line-height:1.5}.stay{margin:0 0 12px;padding:11px 14px;border-radius:10px;background:#171717;color:#fff;font-size:13px;font-weight:650}.steps{margin:0 0 18px;padding:16px 18px;text-align:left;background:#fff;border:1px solid #dedede;border-radius:13px;font-size:14px;line-height:1.7}.fallback{color:#666;font-size:12px;text-underline-offset:3px}.note{margin-top:14px;font-size:12px;color:#777}
   </style>
 </head>
 <body>
   <main class="wrap">
     <img class="icon" src="icon.png" alt="AC">
     <h1>Content Calendar</h1>
-    <p>Install the app with the correct Apple Center icon.</p>
+    <p>Install the calendar app with the correct home-screen icon.</p>
+    <div class="stay">Stay on this page until you tap Add</div>
     <div class="steps"><strong>On iPhone</strong><br>1. Tap the Share button in Safari.<br>2. Choose Add to Home Screen.<br>3. Tap Add.</div>
-    <a class="open" href="https://script.google.com/macros/s/AKfycby3FEfKVARNLpgTPSypkT05VEcdG7STMCHSdX8vePeQoESWm-cFWRUa-rdO3ANPXrY/exec">Open Content Calendar</a>
-    <p class="note">If an older shortcut is installed, delete it first.</p>
+    <a class="fallback" href="https://script.google.com/macros/s/AKfycby3FEfKVARNLpgTPSypkT05VEcdG7STMCHSdX8vePeQoESWm-cFWRUa-rdO3ANPXrY/exec">Open without installing</a>
+    <p class="note">Delete any older shortcut before reinstalling.</p>
   </main>
   <script>
     if(window.navigator.standalone===true||window.matchMedia('(display-mode: standalone)').matches){

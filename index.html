@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="#171717">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="apple-mobile-web-app-title" content="Content Cal">
+  <title>Content Cal</title>
+  <link rel="apple-touch-icon" sizes="180x180" href="icon.png">
+  <link rel="icon" type="image/png" href="icon.png">
+  <link rel="manifest" href="manifest.webmanifest">
+  <style>
+    *{box-sizing:border-box}body{margin:0;min-height:100dvh;display:grid;place-items:center;padding:28px;background:#f7f7f7;color:#171717;font-family:system-ui,-apple-system,sans-serif}.wrap{width:min(390px,100%);text-align:center}.icon{display:block;width:92px;height:92px;margin:0 auto 24px;border-radius:21px;box-shadow:0 10px 28px rgba(23,23,23,.14)}h1{margin:0;font-size:28px;letter-spacing:-.035em}p{margin:10px auto 22px;max-width:31ch;color:#626262;font-size:15px;line-height:1.5}.steps{margin:0 0 22px;padding:16px 18px;text-align:left;background:#fff;border:1px solid #dedede;border-radius:13px;font-size:14px;line-height:1.7}.open{display:flex;align-items:center;justify-content:center;width:100%;height:48px;border-radius:10px;background:#171717;color:#fff;text-decoration:none;font-size:15px;font-weight:600}.note{margin-top:14px;font-size:12px;color:#777}
+  </style>
+</head>
+<body>
+  <main class="wrap">
+    <img class="icon" src="icon.png" alt="AC">
+    <h1>Content Calendar</h1>
+    <p>Install the app with the correct Apple Center icon.</p>
+    <div class="steps"><strong>On iPhone</strong><br>1. Tap the Share button in Safari.<br>2. Choose Add to Home Screen.<br>3. Tap Add.</div>
+    <a class="open" href="https://script.google.com/macros/s/AKfycby3FEfKVARNLpgTPSypkT05VEcdG7STMCHSdX8vePeQoESWm-cFWRUa-rdO3ANPXrY/exec">Open Content Calendar</a>
+    <p class="note">If an older shortcut is installed, delete it first.</p>
+  </main>
+  <script>
+    if(window.navigator.standalone===true||window.matchMedia('(display-mode: standalone)').matches){
+      window.location.replace('https://script.google.com/macros/s/AKfycby3FEfKVARNLpgTPSypkT05VEcdG7STMCHSdX8vePeQoESWm-cFWRUa-rdO3ANPXrY/exec');
+    }
+  </script>
+</body>
+</html>
